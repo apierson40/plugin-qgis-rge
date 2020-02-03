@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExtractRGEDialogBase</class>
+ <widget class="QDialog" name="ExtractRGEDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Extract RGE</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_entree">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>19</y>
+     <width>391</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>1 - Entrée</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>49</y>
+      <width>351</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tabOneCom">
+     <attribute name="title">
+      <string>Une commune</string>
+     </attribute>
+     <widget class="QLabel" name="label_codeCom">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>7</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Saisir le code INSEE de la commune</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_searchOneCom">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_nomCom">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Commune trouvée :</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_validateOneCom">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>101</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Valider</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_inseeCom">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>104</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_nameCom">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabMultiCom">
+     <attribute name="title">
+      <string>Plusieurs communes</string>
+     </attribute>
+     <widget class="QLabel" name="label_listCom">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>10</y>
+        <width>331</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fichier liste des communes</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_searchMultiCom">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>49</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dataListCom">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Données : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_separateur">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Séparateur : </string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_insee">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>80</y>
+        <width>88</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>n° insee</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_nomCom">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nom commune</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_espace">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>110</y>
+        <width>88</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>espace</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_tabulation">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>110</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tabulation</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_virgule">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>88</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>virgule</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_pointVirgule">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>140</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>point-virgule</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_validateMultiCom">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>170</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Valider</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_fileMultiCom">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="label_folderBDP">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>351</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dossiers BD Parcellaire</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_searchFolderBDP">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="label_folderBDO">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>351</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dossiers BD Ortho</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_searchFolderBDO">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>410</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_folderBDP">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>291</width>
+      <height>32</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_folderBDO">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>291</width>
+      <height>32</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_sortie">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>20</y>
+     <width>391</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>2 - Sortie</string>
+   </property>
+   <widget class="QLabel" name="label_folderOutput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>351</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dossier de sortie</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_searchFolderOutput">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_folderOutput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>291</width>
+      <height>32</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_exe">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>150</y>
+     <width>391</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>3 - Execution</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_exe">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lancer le découpage</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>351</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_quit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>* Nouveau traitement *</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_console">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>351</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_updateAdminExpress">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>280</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MAJ Admin Express</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
